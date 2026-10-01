@@ -4,9 +4,255 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projets & Réalisations | KREOVA</title>
-    <meta name="description" content="Découvrez le portfolio des réalisations technologiques et études de cas signées KREOVA.">
+    <meta name="description" content="Découvrez les réalisations technologiques et logiciels sur-mesure signés KREOVA : TOPFOOD, Gestion de Stock, Cartes Grises, CMC.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="logo/Kreova Tech Logo with Orbiting K.png" type="image/png">
+    <style>
+        /* ─── Project Editorial Styles ─── */
+        .project-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .project-entry {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 520px;
+            border-top: 1px solid var(--color-border);
+            position: relative;
+            transition: border-color var(--transition-smooth);
+        }
+
+        .project-entry:last-child {
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        /* Alternate layout: odd entries = text left / visual right */
+        /* Even entries = visual left / text right */
+        .project-entry:nth-child(even) {
+            direction: rtl;
+        }
+        .project-entry:nth-child(even) > * {
+            direction: ltr;
+        }
+
+        .project-entry__visual {
+            position: relative;
+            overflow: hidden;
+            background: var(--color-bg-surface);
+            border-left: 1px solid var(--color-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .project-entry:nth-child(even) .project-entry__visual {
+            border-left: none;
+            border-right: 1px solid var(--color-border);
+        }
+
+        /* Placeholder for visuals — will be replaced with real images */
+        .project-entry__visual-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            color: var(--color-text-dim);
+            font-family: var(--font-heading);
+            font-size: 0.8rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            background: 
+                linear-gradient(135deg, rgba(0,102,255,0.05) 0%, transparent 50%),
+                repeating-linear-gradient(
+                    45deg,
+                    transparent,
+                    transparent 20px,
+                    rgba(255,255,255,0.015) 20px,
+                    rgba(255,255,255,0.015) 21px
+                );
+        }
+
+        .project-entry__visual-placeholder-icon {
+            width: 64px;
+            height: 64px;
+            border: 1px solid var(--color-border);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--color-accent-cyan);
+        }
+
+        /* Real image style — active once project image src is set */
+        .project-entry__visual img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .project-entry:hover .project-entry__visual img {
+            transform: scale(1.04);
+        }
+
+        .project-entry__content {
+            padding: var(--spacing-xl) var(--spacing-lg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: var(--spacing-md);
+        }
+
+        .project-entry__index {
+            font-family: var(--font-heading);
+            font-size: 4rem;
+            font-weight: 200;
+            line-height: 1;
+            color: rgba(255,255,255,0.06);
+            letter-spacing: -0.02em;
+            user-select: none;
+        }
+
+        .project-entry__category {
+            font-family: var(--font-heading);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: var(--color-accent-cyan);
+            border-left: 2px solid var(--color-accent-cyan);
+            padding-left: 0.75rem;
+        }
+
+        .project-entry__title {
+            font-family: var(--font-heading);
+            font-size: clamp(2rem, 3.5vw, 3.25rem);
+            font-weight: 300;
+            line-height: 1.1;
+            color: var(--color-text-main);
+        }
+
+        .project-entry__desc {
+            font-size: 1.05rem;
+            color: var(--color-text-muted);
+            line-height: 1.75;
+            max-width: 480px;
+        }
+
+        .project-entry__details {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            padding: var(--spacing-md) 0;
+            border-top: 1px solid var(--color-border);
+        }
+
+        .project-detail-block {}
+
+        .project-detail-block__label {
+            font-family: var(--font-heading);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--color-text-dim);
+            margin-bottom: 0.4rem;
+        }
+
+        .project-detail-block__text {
+            font-size: 0.975rem;
+            color: var(--color-text-muted);
+            line-height: 1.65;
+        }
+
+        .project-entry__tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tech-pill {
+            display: inline-block;
+            padding: 0.3rem 0.85rem;
+            border: 1px solid var(--color-border);
+            border-radius: 100px;
+            font-family: var(--font-heading);
+            font-size: 0.75rem;
+            letter-spacing: 0.08em;
+            color: var(--color-text-dim);
+            transition: all var(--transition-fast);
+        }
+
+        .tech-pill:hover {
+            border-color: var(--color-accent-cyan);
+            color: var(--color-accent-cyan);
+        }
+
+        .project-entry__cta {
+            margin-top: auto;
+            padding-top: var(--spacing-md);
+        }
+
+        /* Hover line highlight on entire entry */
+        .project-entry::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 0;
+            background: linear-gradient(90deg, var(--color-accent-cyan), var(--color-primary));
+            transition: width 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .project-entry:hover::after {
+            width: 100%;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .project-entry,
+            .project-entry:nth-child(even) {
+                grid-template-columns: 1fr;
+                direction: ltr;
+                min-height: auto;
+            }
+
+            .project-entry__visual {
+                height: 280px;
+                border-left: none;
+                border-bottom: 1px solid var(--color-border);
+            }
+
+            .project-entry:nth-child(even) .project-entry__visual {
+                border-right: none;
+                border-bottom: 1px solid var(--color-border);
+            }
+
+            .project-entry__content {
+                padding: var(--spacing-lg) var(--spacing-md);
+            }
+
+            .project-entry__index {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .project-entry__visual {
+                height: 220px;
+            }
+
+            .project-entry__title {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="page-wrapper">
@@ -38,16 +284,18 @@
             </div>
         </header>
 
-        <section class="hero" style="min-height: 65vh;">
+        <!-- Hero -->
+        <section class="hero" style="min-height: 60vh;">
             <div class="hero__ambient-glow"></div>
             <div class="container">
                 <div class="hero__content">
-                    <span class="text-overline reveal">Portfolio Éditorial</span>
+                    <span class="text-overline reveal">Portfolio Éditorial — 2024 / 2026</span>
                     <h1 class="text-title-xxl reveal delay-1">
-                        Des réalisations à la hauteur de vos <span class="text-gradient">ambitions</span>.
+                        Des réalisations concrètes.<br>
+                        Des <span class="text-gradient">preuves</span> d'expertise.
                     </h1>
                     <p class="text-lead reveal delay-2">
-                        Chaque projet est traité comme une pièce d'ingénierie sur-mesure répondant aux plus hautes exigences de performance et de stabilité.
+                        Chaque projet KREOVA est une réponse précise à un problème opérationnel identifié. Voici nos réalisations les plus représentatives.
                     </p>
                 </div>
             </div>
@@ -55,52 +303,218 @@
 
         <div class="section-divider"></div>
 
-        <section class="section">
+        <!-- Project List -->
+        <section class="section" style="padding-top: 0;">
+            <div class="project-list reveal">
+
+                <!-- 01 — TOPFOOD -->
+                <article class="project-entry">
+                    <div class="project-entry__content">
+                        <div class="project-entry__index">01</div>
+                        <span class="project-entry__category">FoodTech / Logistics</span>
+                        <h2 class="project-entry__title">TOPFOOD</h2>
+                        <p class="project-entry__desc">
+                            Plateforme numérique de gestion et de livraison de repas, conçue pour fluidifier l'ensemble de la chaîne opérationnelle entre restaurants partenaires, clients et livreurs.
+                        </p>
+                        <div class="project-entry__details">
+                            <div class="project-detail-block">
+                                <div class="project-detail-block__label">Problème traité</div>
+                                <div class="project-detail-block__text">La gestion manuelle des commandes et la coordination des livraisons entraînaient des délais, des erreurs et une expérience client fragmentée.</div>
+                            </div>
+                            <div class="project-detail-block">
+                                <div class="project-detail-block__label">Solution KREOVA</div>
+                                <div class="project-detail-block__text">Développement d'une plateforme intégrée couvrant la prise de commande en ligne, le suivi de livraison en temps réel et la gestion des partenaires restaurateurs depuis un tableau de bord centralisé.</div>
+                            </div>
+                            <div class="project-detail-block">
+                                <div class="project-detail-block__label">Technologies</div>
+                                <div class="project-entry__tech">
+                                    <span class="tech-pill">Web App</span>
+                                    <span class="tech-pill">Application Mobile</span>
+                                    <span class="tech-pill">Géolocalisation</span>
+                                    <span class="tech-pill">Dashboard Admin</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-entry__cta">
+                            <a href="contact.html" class="btn btn--outline">Découvrir le projet →</a>
+                        </div>
+                    </div>
+                    <div class="project-entry__visual">
+                        <!-- Remplacer par : <img src="images/topfood-preview.jpg" alt="TOPFOOD — Plateforme de livraison de repas"> -->
+                        <div class="project-entry__visual-placeholder">
+                            <div class="project-entry__visual-placeholder-icon">🍽</div>
+                            Visuel à venir
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 02 — LOGICIEL DE GESTION DE STOCK -->
+                <article class="project-entry">
+                    <div class="project-entry__content">
+                        <div class="project-entry__index">02</div>
+                        <span class="project-entry__category">Business Software</span>
+                        <h2 class="project-entry__title">Logiciel de Gestion de Stock</h2>
+                        <p class="project-entry__desc">
+                            Solution numérique complète pour la gestion des stocks, des produits et des opérations commerciales quotidiennes au sein des entreprises et commerces locaux.
+                        </p>
+                        <div class="project-entry__details">
+                            <div class="project-detail-block">
+                                <div class="project-detail-block__label">Problème traité</div>
+                                <div class="project-detail-block__text">Les pertes liées à une gestion manuelle et non traçable des stocks : ruptures non détectées, surstockage et manque de visibilité sur les mouvements de produits.</div>
+                            </div>
+                            <div class="project-detail-block">
+                                <div class="project-detail-block__label">Solution KREOVA</div>
+                                <div class="project-detail-block__text">Un logiciel métier couvrant la gestion des entrées/sorties de stock, le suivi des fournisseurs, la facturation intégrée et les alertes de réapprovisionnement automatiques.</div>
+                            </div>
+                            <div class="project-detail-block">
+                                <div class="project-detail-block__label">Technologies</div>
+                                <div class="project-entry__tech">
+                                    <span class="tech-pill">Application Desktop</span>
+                                    <span class="tech-pill">Base de Données</span>
+                                    <span class="tech-pill">Facturation</span>
+                                    <span class="tech-pill">Reporting</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-entry__cta">
+                            <a href="contact.html" class="btn btn--outline">Découvrir le projet →</a>
+                        </div>
+                    </div>
+                    <div class="project-entry__visual">
+                        <!-- Remplacer par : <img src="images/gestion-stock-preview.jpg" alt="Logiciel de Gestion de Stock KREOVA"> -->
+                        <div class="project-entry__visual-placeholder">
+                            <div class="project-entry__visual-placeholder-icon">📦</div>
+                            Visuel à venir
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 03 — GESTION DE CARTES GRISES -->
+                <article class="project-entry">
+                    <div class="project-entry__content">
+                        <div class="project-entry__index">03</div>
+                        <span class="project-entry__category">GovTech / Digital Administration</span>
+                        <h2 class="project-entry__title">Gestion de Cartes Grises</h2>
+                        <p class="project-entry__desc">
+                            Solution numérique dédiée à la gestion, au traitement et au suivi des dossiers de cartes grises de véhicules — conçue pour moderniser et sécuriser une procédure administrative critique.
+                        </p>
+                        <div class="project-entry__details">
+                            <div class="project-detail-block">
+                                <div class="project-detail-block__label">Problème traité</div>
+                                <div class="project-detail-block__text">Un processus de délivrance des cartes grises entièrement manuel, sujet aux erreurs, aux doublons et à une traçabilité insuffisante des dossiers traités.</div>
+                            </div>
+                            <div class="project-detail-block">
+                                <div class="project-detail-block__label">Solution KREOVA</div>
+                                <div class="project-detail-block__text">Développement d'un logiciel centralisé de gestion des dossiers permettant l'enregistrement sécurisé, la recherche, le suivi du statut de traitement et l'historique complet de chaque dossier.</div>
+                            </div>
+                            <div class="project-detail-block">
+                                <div class="project-detail-block__label">Technologies</div>
+                                <div class="project-entry__tech">
+                                    <span class="tech-pill">Application Métier</span>
+                                    <span class="tech-pill">Gestion de Dossiers</span>
+                                    <span class="tech-pill">Sécurité des Données</span>
+                                    <span class="tech-pill">Traçabilité</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-entry__cta">
+                            <a href="contact.html" class="btn btn--outline">Découvrir le projet →</a>
+                        </div>
+                    </div>
+                    <div class="project-entry__visual">
+                        <!-- Remplacer par : <img src="images/cartes-grises-preview.jpg" alt="Logiciel Gestion Cartes Grises KREOVA"> -->
+                        <div class="project-entry__visual-placeholder">
+                            <div class="project-entry__visual-placeholder-icon">🪪</div>
+                            Visuel à venir
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 04 — LOGICIEL DE GESTION CMC -->
+                <article class="project-entry">
+                    <div class="project-entry__content">
+                        <div class="project-entry__index">04</div>
+                        <span class="project-entry__category">Digital Management</span>
+                        <h2 class="project-entry__title">Logiciel de Gestion CMC</h2>
+                        <p class="project-entry__desc">
+                            Solution numérique de gestion et de suivi des opérations CMC, permettant une supervision structurée et rigoureuse de l'activité sur le terrain et en bureau.
+                        </p>
+                        <div class="project-entry__details">
+                            <div class="project-detail-block">
+                                <div class="project-detail-block__label">Problème traité</div>
+                                <div class="project-detail-block__text">L'absence d'un outil de suivi unifié rendait difficile la consolidation des données opérationnelles et la prise de décision en temps réel.</div>
+                            </div>
+                            <div class="project-detail-block">
+                                <div class="project-detail-block__label">Solution KREOVA</div>
+                                <div class="project-detail-block__text">Un logiciel de gestion opérationnelle permettant l'enregistrement, le suivi et l'analyse des activités CMC, avec des tableaux de bord synthétiques pour les responsables.</div>
+                            </div>
+                            <div class="project-detail-block">
+                                <div class="project-detail-block__label">Technologies</div>
+                                <div class="project-entry__tech">
+                                    <span class="tech-pill">Application Métier</span>
+                                    <span class="tech-pill">Suivi Opérationnel</span>
+                                    <span class="tech-pill">Tableaux de Bord</span>
+                                    <span class="tech-pill">Reporting</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-entry__cta">
+                            <a href="contact.html" class="btn btn--outline">Découvrir le projet →</a>
+                        </div>
+                    </div>
+                    <div class="project-entry__visual">
+                        <!-- Remplacer par : <img src="images/gestion-cmc-preview.jpg" alt="Logiciel Gestion CMC KREOVA"> -->
+                        <div class="project-entry__visual-placeholder">
+                            <div class="project-entry__visual-placeholder-icon">⚙️</div>
+                            Visuel à venir
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CTA Block -->
+        <section class="section" style="padding-top: var(--spacing-xl);">
             <div class="container">
-                <div class="portfolio-grid reveal">
-                    <div class="portfolio-card col-8">
-                        <span class="portfolio-card__category">[FINANCE / INSTITUTIONNEL]</span>
-                        <div class="portfolio-card__arrow">↗</div>
-                        <div class="portfolio-card__content">
-                            <h3 class="portfolio-card__title">[Nom du Projet 01] — Plateforme de Gestion Globale</h3>
-                            <p class="portfolio-card__desc">Conception et déploiement d'un système complet d'administration de flux financiers et de traitement analytique en temps réel.</p>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-card col-4">
-                        <span class="portfolio-card__category">[LOGISTIQUE / TERRAIN]</span>
-                        <div class="portfolio-card__arrow">↗</div>
-                        <div class="portfolio-card__content">
-                            <h3 class="portfolio-card__title">[Nom du Projet 02] — Solution Mobile</h3>
-                            <p class="portfolio-card__desc">Application mobile de traçabilité en temps réel avec synchronisation hors-ligne pour les agents sur le terrain.</p>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-card col-4">
-                        <span class="portfolio-card__category">[SANTÉ / DATA]</span>
-                        <div class="portfolio-card__arrow">↗</div>
-                        <div class="portfolio-card__content">
-                            <h3 class="portfolio-card__title">[Nom du Projet 03] — Système d'Information</h3>
-                            <p class="portfolio-card__desc">Modernisation intégrale d'un système d'information critique et sécurisation des données sensibles.</p>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-card col-8">
-                        <span class="portfolio-card__category">[MINES / INDUSTRIE]</span>
-                        <div class="portfolio-card__arrow">↗</div>
-                        <div class="portfolio-card__content">
-                            <h3 class="portfolio-card__title">[Nom du Projet 04] — Superviseur IoT & Analyse</h3>
-                            <p class="portfolio-card__desc">Plateforme de télémétrie industrielle permettant la surveillance continue et prédictive des équipements sur site.</p>
-                        </div>
-                    </div>
+                <div class="reveal" style="text-align: center; max-width: 680px; margin: 0 auto;">
+                    <span class="text-overline">Votre Prochain Projet</span>
+                    <h2 class="text-title-xl" style="margin: 1rem 0 1.5rem;">Vous avez un défi technologique à relever ?</h2>
+                    <p style="color: var(--color-text-muted); font-size: 1.1rem; line-height: 1.75; margin-bottom: 2.5rem;">
+                        Nos ingénieurs sont disponibles pour analyser votre besoin et concevoir la solution la plus adaptée à votre contexte.
+                    </p>
+                    <a href="contact.html" class="btn btn--primary">Démarrer une conversation →</a>
                 </div>
             </div>
         </section>
 
         <footer class="footer">
             <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="index.html" class="footer-brand__logo">
+                            <img src="logo/Kreova Futuristic Blue Tech Logo.png" alt="KREOVA Logo">
+                        </a>
+                    </div>
+                    <div class="footer-nav">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="about.html">À propos</a></li>
+                            <li><a href="projets.html">Projets</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav">
+                        <h4>Localisation</h4>
+                        <ul>
+                            <li><a>Ouagadougou, Burkina Faso</a></li>
+                            <li><a href="mailto:hello@kreova.dev">hello@kreova.dev</a></li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="footer-bottom">
-                    <div>&copy; 2026 KREOVA. Réalisations & Portfolio.</div>
+                    <div>&copy; 2026 KREOVA. Tous droits réservés.</div>
                 </div>
             </div>
         </footer>
