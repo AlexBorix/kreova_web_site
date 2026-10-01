@@ -1,0 +1,845 @@
+Tu es une équipe senior composée d’un directeur artistique, d’un UX/UI designer, d’un architecte web et d’un développeur front-end avec plus de 20 ans d’expérience dans la conception de sites institutionnels et technologiques haut de gamme.
+
+Ta mission est de concevoir le site web officiel de :
+
+KREOVA
+ENTREPRISE TECHNOLOGIQUES & INNOVATION
+
+KREOVA est une entreprise technologique et d’innovation basée au Burkina Faso, ayant vocation à concevoir des solutions numériques modernes, utiles, fiables et évolutives pour les entreprises, organisations et particuliers.
+
+OBJECTIF PRINCIPAL
+
+Créer un site qui ne donne absolument pas l’impression d’avoir été généré par une IA ou construit à partir d’un template.
+
+Le site doit donner l’impression qu’une véritable agence digitale premium a travaillé pendant plusieurs semaines sur :
+- la stratégie de marque
+- l’architecture de l’information
+- l’identité visuelle
+- l’expérience utilisateur
+- la direction artistique
+- la typographie
+- les micro-interactions
+- la rédaction
+- les performances
+- les détails visuels
+
+Le résultat doit être :
+élégant, sobre, technologique, humain, premium, crédible, respirant et mémorable.
+
+NE PAS chercher à impressionner avec trop d’effets.
+
+La sophistication doit venir de la maîtrise du design, de l’espace, de la typographie, de la hiérarchie visuelle et des animations extrêmement maîtrisées.
+
+--------------------------------------------------
+1. IDENTITÉ DE MARQUE
+--------------------------------------------------
+
+Nom :
+KREOVA
+
+Dénomination :
+KREOVA ENTREPRISE TECHNOLOGIQUES & INNOVATION
+
+Positionnement :
+Entreprise technologique et d’innovation.
+
+KREOVA doit être perçue comme une entreprise :
+- sérieuse
+- ambitieuse
+- moderne
+- fiable
+- innovante
+- africaine dans son implantation
+- internationale dans son niveau de conception
+- orientée solutions
+- capable d’accompagner aussi bien les PME que les organisations plus importantes.
+
+Ne pas tomber dans les clichés visuels de « startup africaine ».
+
+L’identité doit être contemporaine et internationale tout en gardant subtilement son ancrage africain.
+
+--------------------------------------------------
+2. LOGO
+--------------------------------------------------
+
+Utiliser le logo KREOVA fourni comme élément central de l’identité.
+
+Respecter strictement :
+- les proportions
+- les formes
+- les couleurs
+- la lisibilité
+- l’espace de protection
+- l’intégrité du logo
+
+Ne jamais déformer le logo.
+
+Prévoir différentes utilisations :
+- logo complet
+- symbole seul
+- version claire
+- version sombre
+- favicon
+
+Le symbole KREOVA doit pouvoir devenir un élément graphique secondaire du site.
+
+--------------------------------------------------
+3. DIRECTION ARTISTIQUE
+--------------------------------------------------
+
+Créer une esthétique « premium technology ».
+
+Référence mentale :
+
+Une entreprise technologique mature et ambitieuse, pas une startup qui cherche à paraître technologique.
+
+Le design doit être minimaliste mais pas vide.
+
+Il doit respirer.
+
+Utiliser généreusement :
+- espaces blancs
+- marges importantes
+- grandes typographies
+- compositions asymétriques maîtrisées
+- grilles éditoriales
+- lignes fines
+- détails graphiques subtils
+- profondeur légère
+- contrastes maîtrisés.
+
+Éviter :
+- gradients excessifs
+- glassmorphism partout
+- ombres lourdes
+- cartes à répétition
+- boutons géants
+- animations permanentes
+- icônes génériques
+- illustrations de banques d’images
+- photos de personnes avec casques VR ou devant des écrans
+- phrases marketing artificielles
+- jargon technologique inutile.
+
+Le site doit sembler avoir une personnalité propre.
+
+--------------------------------------------------
+4. PALETTE
+--------------------------------------------------
+
+Construire la palette autour de l’identité du logo.
+
+Couleurs principales :
+- bleu technologique profond
+- bleu électrique/cyan utilisé avec parcimonie
+- noir ou bleu-noir profond
+- blanc cassé / blanc propre
+- gris neutres sophistiqués.
+
+Le bleu doit être un accent stratégique, pas remplir toute l’interface.
+
+Créer suffisamment de zones neutres pour permettre au contenu de respirer.
+
+Le site doit être parfaitement lisible en :
+- mode clair
+- mode sombre
+
+Si un mode sombre est utilisé, il doit être réellement travaillé et non simplement inversé.
+
+--------------------------------------------------
+5. TYPOGRAPHIE
+--------------------------------------------------
+
+Utiliser une typographie contemporaine, professionnelle et extrêmement lisible.
+
+Le système typographique doit avoir :
+- une police principale
+- éventuellement une police secondaire
+- une hiérarchie claire
+- des titres imposants mais élégants
+- des textes courts et lisibles
+- une excellente lisibilité mobile.
+
+Éviter les typographies futuristes difficiles à lire.
+
+La typographie doit donner une sensation de confiance et de maturité.
+
+--------------------------------------------------
+6. HERO SECTION
+--------------------------------------------------
+
+La première impression est extrêmement importante.
+
+Créer une hero section spectaculaire mais sobre.
+
+Ne pas mettre simplement :
+
+« Nous sommes une entreprise technologique qui transforme le monde. »
+
+Créer une véritable proposition de valeur.
+
+Exemple de direction rédactionnelle :
+
+« Nous concevons les technologies qui font avancer les entreprises. »
+
+Sous-titre :
+
+« KREOVA imagine, développe et déploie des solutions numériques pensées pour répondre aux défis réels d’aujourd’hui et construire les opportunités de demain. »
+
+Prévoir deux CTA :
+
+« Découvrir KREOVA »
+« Démarrer un projet »
+
+Le hero doit immédiatement répondre à trois questions :
+
+QUI SOMMES-NOUS ?
+QUE FAISONS-NOUS ?
+POURQUOI NOUS FAIRE CONFIANCE ?
+
+Créer une composition visuelle forte autour du symbole KREOVA.
+
+Possibilité d'utiliser :
+- mouvement orbital subtil
+- particules extrêmement discrètes
+- lignes techniques
+- grille dynamique
+- lumière abstraite
+- formes géométriques inspirées du logo.
+
+Mais absolument aucune animation spectaculaire inutile.
+
+L'animation doit être lente, élégante et presque imperceptible.
+
+--------------------------------------------------
+7. NAVIGATION
+--------------------------------------------------
+
+Créer une navigation extrêmement propre.
+
+Menu recommandé :
+
+Accueil
+À propos
+Nos expertises
+Solutions
+Projets
+Innovation
+Contact
+
+CTA permanent :
+
+« Parlons de votre projet »
+
+Le header doit être :
+- minimal
+- parfaitement aligné
+- responsive
+- sticky lors du scroll
+- légèrement transformé lors du défilement.
+
+Au scroll, le header peut devenir légèrement plus compact.
+
+--------------------------------------------------
+8. SECTION « À PROPOS »
+--------------------------------------------------
+
+Ne pas écrire un énorme paragraphe institutionnel.
+
+Créer une narration visuelle.
+
+Titre :
+
+« La technologie doit résoudre des problèmes réels. »
+
+Présenter KREOVA comme une entreprise qui transforme des besoins complexes en solutions simples, utiles et évolutives.
+
+Mettre en avant quelques principes :
+
+01 — Comprendre
+02 — Concevoir
+03 — Construire
+04 — Faire évoluer
+
+Utiliser une mise en page éditoriale premium.
+
+--------------------------------------------------
+9. NOS EXPERTISES
+--------------------------------------------------
+
+Présenter les expertises de manière claire et non générique.
+
+Exemples :
+
+01
+Développement logiciel
+
+Applications web, plateformes métiers et solutions digitales sur mesure.
+
+02
+Solutions mobiles
+
+Applications mobiles pensées pour des usages réels et une expérience fluide.
+
+03
+Transformation numérique
+
+Digitalisation des processus et amélioration des opérations.
+
+04
+Cybersécurité
+
+Protection des systèmes, des données et des infrastructures numériques.
+
+05
+Cloud & infrastructures
+
+Architecture, déploiement, hébergement et optimisation des infrastructures.
+
+06
+Innovation
+
+Conception de nouveaux produits numériques et expérimentation technologique.
+
+Ne pas présenter ces éléments sous forme de 6 cartes identiques.
+
+Créer une composition éditoriale dynamique.
+
+--------------------------------------------------
+10. SECTION SOLUTIONS
+--------------------------------------------------
+
+Présenter les solutions développées par KREOVA.
+
+Le système doit pouvoir évoluer avec l’entreprise.
+
+Chaque solution doit avoir :
+- nom
+- description
+- problème résolu
+- cible
+- bénéfices
+- technologies éventuellement utilisées
+- bouton « Découvrir ».
+
+Utiliser une présentation visuelle premium.
+
+--------------------------------------------------
+11. SECTION PROJETS
+--------------------------------------------------
+
+Créer un portfolio extrêmement élégant.
+
+Ne pas utiliser une simple grille de cartes.
+
+Créer une galerie éditoriale avec des tailles différentes.
+
+Chaque projet doit présenter :
+
+Nom du projet
+Secteur
+Problématique
+Solution
+Résultat
+Technologies
+
+Prévoir des études de cas détaillées.
+
+Le portfolio doit être conçu pour donner envie au visiteur de découvrir le projet suivant.
+
+--------------------------------------------------
+12. SECTION INNOVATION
+--------------------------------------------------
+
+Créer une section qui distingue KREOVA d'une simple agence informatique.
+
+Titre possible :
+
+« Nous ne suivons pas simplement la technologie. Nous explorons ce qu'elle peut devenir. »
+
+Présenter :
+- recherche
+- expérimentation
+- intelligence artificielle
+- automatisation
+- cybersécurité
+- nouveaux produits numériques
+- technologies émergentes.
+
+Cette section doit avoir une direction artistique différente du reste du site.
+
+--------------------------------------------------
+13. SECTION CHIFFRES
+--------------------------------------------------
+
+Créer une section très minimaliste avec quelques indicateurs.
+
+Exemples :
+
+Projets réalisés
+Solutions développées
+Secteurs accompagnés
+Années d'expérience
+Clients / partenaires
+
+NE PAS inventer les chiffres.
+
+Prévoir des valeurs facilement modifiables dans le code.
+
+--------------------------------------------------
+14. SECTION MÉTHODOLOGIE
+--------------------------------------------------
+
+Présenter comment KREOVA travaille.
+
+Étape 01
+Écouter
+
+Étape 02
+Analyser
+
+Étape 03
+Concevoir
+
+Étape 04
+Développer
+
+Étape 05
+Déployer
+
+Étape 06
+Améliorer
+
+Créer une expérience de scroll permettant de découvrir progressivement chaque étape.
+
+L'animation doit être fluide et professionnelle.
+
+--------------------------------------------------
+15. SECTION « POURQUOI KREOVA »
+--------------------------------------------------
+
+Ne pas utiliser les clichés :
+
+« qualité »
+« innovation »
+« excellence »
+
+sans explication.
+
+Présenter des arguments concrets.
+
+Exemples :
+
+Technologie pensée pour l'usage réel.
+
+Architecture conçue pour évoluer.
+
+Accompagnement de la conception au déploiement.
+
+Approche orientée résultats.
+
+Solutions adaptées au contexte africain et conçues avec des standards internationaux.
+
+--------------------------------------------------
+16. APPEL À L'ACTION
+--------------------------------------------------
+
+Créer une grande section finale très forte.
+
+Exemple :
+
+« Un problème complexe mérite une solution bien conçue. »
+
+Sous-texte :
+
+« Vous avez une idée, un processus à digitaliser ou un projet à construire ? Parlons-en. »
+
+CTA :
+
+« Démarrer une conversation »
+
+Cette section doit donner une sensation de conclusion naturelle.
+
+--------------------------------------------------
+17. CONTACT
+--------------------------------------------------
+
+Créer une page contact très élégante.
+
+Champs :
+
+Nom
+Entreprise
+Email
+Téléphone
+Type de projet
+Budget indicatif
+Message
+
+Ajouter :
+
+Ouagadougou, Burkina Faso
+
+Prévoir également :
+- email professionnel
+- téléphone
+- réseaux sociaux
+- WhatsApp si pertinent.
+
+Ne pas inventer les coordonnées.
+
+--------------------------------------------------
+18. FOOTER
+--------------------------------------------------
+
+Footer premium et minimal.
+
+Logo KREOVA.
+
+Courte phrase institutionnelle.
+
+Navigation.
+
+Expertises.
+
+Contact.
+
+Réseaux sociaux.
+
+Mentions légales.
+
+Politique de confidentialité.
+
+Copyright.
+
+Le footer doit être visuellement fort sans être chargé.
+
+--------------------------------------------------
+19. ANIMATIONS
+--------------------------------------------------
+
+Les animations sont extrêmement importantes mais doivent rester discrètes.
+
+Utiliser éventuellement :
+
+- apparition progressive au scroll
+- déplacement léger des éléments
+- transitions de 300–700 ms
+- parallaxe très légère
+- micro-interactions sur les boutons
+- changement subtil du header
+- révélation typographique
+- transitions entre sections.
+
+INTERDICTION :
+
+Ne jamais animer tous les éléments simultanément.
+
+Ne jamais mettre d'animations qui ralentissent la lecture.
+
+Ne jamais utiliser d'effets « flashy ».
+
+Le visiteur doit ressentir la qualité avant même de comprendre pourquoi.
+
+--------------------------------------------------
+20. UX
+--------------------------------------------------
+
+L'expérience utilisateur doit être conçue avant l'esthétique.
+
+Chaque section doit avoir une raison d'exister.
+
+Créer un parcours naturel :
+
+Découverte
+↓
+Compréhension
+↓
+Crédibilité
+↓
+Expertise
+↓
+Preuves
+↓
+Confiance
+↓
+Contact
+
+Le visiteur ne doit jamais se demander :
+
+« Où dois-je cliquer ? »
+
+--------------------------------------------------
+21. RESPONSIVE
+--------------------------------------------------
+
+Le site doit être conçu mobile-first.
+
+Tester soigneusement :
+
+360px
+390px
+430px
+768px
+1024px
+1280px
+1440px
+1920px
+
+Le design mobile ne doit pas être simplement une version réduite du desktop.
+
+Créer une véritable expérience mobile.
+
+--------------------------------------------------
+22. PERFORMANCE
+--------------------------------------------------
+
+Le site doit être extrêmement rapide.
+
+Objectifs :
+
+- chargement rapide
+- images optimisées
+- lazy loading
+- code propre
+- peu de JavaScript inutile
+- animations optimisées GPU
+- excellente accessibilité
+- excellent score Lighthouse.
+
+Éviter les bibliothèques inutiles.
+
+--------------------------------------------------
+23. SEO
+--------------------------------------------------
+
+Préparer le site pour le référencement.
+
+Créer :
+
+- titres SEO
+- meta descriptions
+- Open Graph
+- données structurées lorsque pertinentes
+- URLs propres
+- sitemap
+- robots.txt
+- balises sémantiques
+- structure H1/H2/H3 cohérente.
+
+Positionnement SEO naturel autour de :
+
+KREOVA
+technologie Burkina Faso
+entreprise informatique Burkina Faso
+solutions digitales Burkina Faso
+développement logiciel Burkina Faso
+transformation numérique Burkina Faso
+cybersécurité Burkina Faso
+
+Ne pas faire de keyword stuffing.
+
+--------------------------------------------------
+24. ACCESSIBILITÉ
+--------------------------------------------------
+
+Respecter les bonnes pratiques WCAG.
+
+Prévoir :
+
+- contrastes suffisants
+- navigation clavier
+- focus visible
+- textes alternatifs
+- structure sémantique
+- boutons accessibles
+- réduction des animations si l'utilisateur préfère réduire les mouvements.
+
+--------------------------------------------------
+25. MICRO-DÉTAILS
+--------------------------------------------------
+
+C'est ici que doit se voir l'expérience du designer.
+
+Travailler particulièrement :
+
+- alignements
+- espacements
+- hauteur des lignes
+- largeur maximale des paragraphes
+- rythme vertical
+- états hover
+- curseur
+- transitions
+- bordures
+- séparateurs
+- numérotation des sections
+- iconographie
+- comportement du header
+- comportement du footer
+- responsive typography.
+
+Aucun élément ne doit sembler placé au hasard.
+
+--------------------------------------------------
+26. RÈGLE ABSOLUE : PAS DE TEMPLATE
+--------------------------------------------------
+
+NE PAS produire :
+
+Hero générique + 3 cartes + section statistiques + témoignages + FAQ + footer.
+
+Cette structure est interdite si elle n'est pas justifiée.
+
+Le site doit avoir une composition originale.
+
+Ne pas utiliser de composants visuellement répétitifs uniquement parce qu'ils sont faciles à générer.
+
+Chaque section doit avoir sa propre personnalité tout en appartenant au même système graphique.
+
+--------------------------------------------------
+27. TON RÉDACTIONNEL
+--------------------------------------------------
+
+Le ton doit être :
+
+- intelligent
+- humain
+- précis
+- confiant
+- professionnel
+- moderne
+- sobre.
+
+Éviter les phrases artificielles comme :
+
+« Nous révolutionnons le monde grâce à l'innovation. »
+
+« Notre équipe passionnée transforme vos rêves en réalité. »
+
+« Nous sommes à la pointe de la technologie. »
+
+Privilégier des phrases courtes, concrètes et crédibles.
+
+--------------------------------------------------
+28. TECHNOLOGIES
+--------------------------------------------------
+
+Si le site est développé avec du code, privilégier une architecture moderne, propre et maintenable.
+
+Frontend :
+HTML sémantique / CSS moderne / JavaScript moderne ou framework adapté.
+
+Si React est utilisé :
+React + Next.js.
+
+Si une solution simple suffit :
+HTML + CSS + JavaScript propre.
+
+Utiliser une librairie d'animation uniquement si elle apporte une vraie valeur.
+
+Ne pas ajouter de dépendances inutilement.
+
+--------------------------------------------------
+29. STRUCTURE DES PAGES
+--------------------------------------------------
+
+Créer au minimum :
+
+/
+Accueil
+
+/about
+À propos
+
+/expertises
+Nos expertises
+
+/solutions
+Solutions
+
+/projets
+Projets
+
+/innovation
+Innovation
+
+/contact
+Contact
+
+Prévoir une architecture facilement extensible.
+
+--------------------------------------------------
+30. RÉSULTAT FINAL ATTENDU
+--------------------------------------------------
+
+Lorsque quelqu'un arrive sur le site KREOVA, il doit ressentir :
+
+« Cette entreprise est sérieuse. »
+
+Puis :
+
+« Ils savent réellement ce qu'ils font. »
+
+Puis :
+
+« Leur manière de présenter les choses est différente. »
+
+Puis :
+
+« J'ai envie de découvrir leurs projets. »
+
+Et finalement :
+
+« Je peux leur confier mon projet. »
+
+Le site doit vendre la confiance avant de vendre les services.
+
+Créer une expérience digitale qui ressemble à la vitrine d'une entreprise technologique ambitieuse appelée à devenir une référence.
+
+IMPORTANT :
+
+Ne pas chercher à montrer que le site est technologiquement complexe.
+
+Chercher à montrer qu'il a été extrêmement bien pensé.
+
+Le luxe du site doit être dans la retenue.
+
+Le design doit être intemporel.
+
+Il doit pouvoir rester pertinent dans 5 ans.
+
+Créer une première version complète, cohérente et réellement exploitable.
+
+Avant de coder, réfléchir à :
+1. la hiérarchie visuelle
+2. l'expérience utilisateur
+3. la direction artistique
+4. la structure du contenu
+5. les interactions
+6. le responsive
+7. les performances.
+
+Ne jamais sacrifier l'expérience utilisateur pour un effet visuel.
+
+
+Le logo KREOVA fourni dans les fichiers de référence est la source principale de l'identité visuelle.
+
+Analyse visuellement le logo avant de concevoir l'interface.
+
+Extrais-en :
+- les formes géométriques
+- le langage visuel
+- les proportions
+- les couleurs
+- le mouvement
+- les contrastes
+- les éléments graphiques réutilisables.
+
+Ne copie pas simplement le logo dans toutes les sections.
+
+Transforme son langage graphique en un véritable système d'identité visuelle pour le site.
+
+Le symbole KREOVA doit pouvoir apparaître subtilement dans certains éléments de l'interface : transitions, séparateurs, motifs, favicon, loading state, éléments de navigation et compositions graphiques.
+
+Le résultat doit donner l'impression que le logo et le site ont été conçus par le même directeur artistique.

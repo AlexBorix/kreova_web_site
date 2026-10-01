@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | KREOVA</title>
+    <meta name="description" content="Entrez en contact avec l'équipe d'ingénierie et de direction de KREOVA.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="logo/Kreova Tech Logo with Orbiting K.png" type="image/png">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="mobile-menu">
+            <a href="index.html" class="nav__link">Accueil</a>
+            <a href="about.html" class="nav__link">À propos</a>
+            <a href="expertises.html" class="nav__link">Nos expertises</a>
+            <a href="solutions.html" class="nav__link">Solutions</a>
+            <a href="projets.html" class="nav__link">Projets</a>
+            <a href="innovation.html" class="nav__link">Innovation</a>
+            <a href="contact.html" class="nav__link">Contact</a>
+        </div>
+
+        <header class="header">
+            <div class="container header__inner">
+                <a href="index.html" class="header__logo">
+                    <img src="logo/Kreova Tech Logo with Orbiting K.png" alt="KREOVA Logo">
+                </a>
+                <nav class="header__nav">
+                    <a href="index.html" class="nav__link">Accueil</a>
+                    <a href="about.html" class="nav__link">À propos</a>
+                    <a href="expertises.html" class="nav__link">Nos expertises</a>
+                    <a href="solutions.html" class="nav__link">Solutions</a>
+                    <a href="projets.html" class="nav__link">Projets</a>
+                    <a href="innovation.html" class="nav__link">Innovation</a>
+                    <a href="contact.html" class="nav__link active">Contact</a>
+                </nav>
+                <button class="header__menu-btn">☰</button>
+            </div>
+        </header>
+
+        <section class="hero" style="min-height: 60vh;">
+            <div class="hero__ambient-glow"></div>
+            <div class="container">
+                <div class="hero__content">
+                    <span class="text-overline reveal">Amorce de Dialogue</span>
+                    <h1 class="text-title-xxl reveal delay-1">
+                        Échangeons sur votre <span class="text-gradient">prochain projet</span>.
+                    </h1>
+                    <p class="text-lead reveal delay-2">
+                        Nos ingénieurs et architectes logiciels sont à votre disposition pour analyser vos besoins et concevoir votre solution.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="section">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--spacing-xl);">
+                    
+                    <div class="reveal">
+                        <span class="text-overline">Coordonnées</span>
+                        <h2 class="text-title-xl" style="margin-bottom: var(--spacing-md);">Siège & Bureau</h2>
+                        
+                        <div style="margin-bottom: var(--spacing-md);">
+                            <h4 style="color: var(--color-white); margin-bottom: 0.5rem;">Localisation</h4>
+                            <p style="color: var(--color-text-dim); font-size: 1.1rem; line-height: 1.6;">
+                                Ouagadougou, Burkina Faso<br>
+                                Zone d'activités technologiques
+                            </p>
+                        </div>
+
+                        <div style="margin-bottom: var(--spacing-md);">
+                            <h4 style="color: var(--color-white); margin-bottom: 0.5rem;">Courrier Électronique</h4>
+                            <p style="color: var(--color-primary-light); font-size: 1.2rem; font-weight: 500;">
+                                <a href="mailto:hello@kreova.dev" style="color: inherit; text-decoration: none;">hello@kreova.dev</a>
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4 style="color: var(--color-white); margin-bottom: 0.5rem;">Téléphone & WhatsApp</h4>
+                            <p style="color: var(--color-text-dim); font-size: 1.1rem;">
+                                +226 00 00 00 00
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="reveal delay-1">
+                        <form id="contactForm" style="display: flex; flex-direction: column; gap: var(--spacing-md); background: var(--color-card-bg); border: 1px solid var(--color-border); border-radius: 16px; padding: var(--spacing-lg); backdrop-filter: blur(12px);">
+                            <div>
+                                <label style="display: block; color: var(--color-text-dim); margin-bottom: 0.5rem; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em;">Nom complet</label>
+                                <input type="text" required style="width: 100%; background: var(--color-bg); border: 1px solid var(--color-border); padding: 1rem; border-radius: 8px; color: var(--color-white); outline: none;">
+                            </div>
+
+                            <div>
+                                <label style="display: block; color: var(--color-text-dim); margin-bottom: 0.5rem; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em;">Adresse Email</label>
+                                <input type="email" required style="width: 100%; background: var(--color-bg); border: 1px solid var(--color-border); padding: 1rem; border-radius: 8px; color: var(--color-white); outline: none;">
+                            </div>
+
+                            <div>
+                                <label style="display: block; color: var(--color-text-dim); margin-bottom: 0.5rem; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em;">Sujet / Projet</label>
+                                <input type="text" required style="width: 100%; background: var(--color-bg); border: 1px solid var(--color-border); padding: 1rem; border-radius: 8px; color: var(--color-white); outline: none;">
+                            </div>
+
+                            <div>
+                                <label style="display: block; color: var(--color-text-dim); margin-bottom: 0.5rem; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em;">Votre Message</label>
+                                <textarea rows="5" required style="width: 100%; background: var(--color-bg); border: 1px solid var(--color-border); padding: 1rem; border-radius: 8px; color: var(--color-white); outline: none; resize: vertical;"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn--primary" style="margin-top: 1rem; width: 100%;">
+                                Envoyer la demande <span>→</span>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-bottom">
+                    <div>&copy; 2026 KREOVA. Tous droits réservés.</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
